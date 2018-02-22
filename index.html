@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Mr+Bedfort" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>The Crystals Collector Game</title>
+   
+</head>
+<body>
+    <div class="wrapper">
+        <!-- this is the container that holds all the content of the game -->
+        <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+            <!-- row 1 - this is the heading of the game-->
+                        <h1 class="heading">Crystals Collector!</h1>
+                    </div>
+                </div>
+            <!--row 2 column 1 - instructions for the game-->
+                <div class="row">
+                    <div class="section col-sm-12 col-md-12 col-lg-6">
+                        <h2>Instructions: <span id="instructions"></span></h2>
+                        <p>
+                            <ol>
+                                <li>At the start of the game, you'll be given a target score.
+                                </li>
+                                <li>On the four gemstones pictured below, each one has a hidden value within it. Every time you click
+                                    on a gemstone, the values are added together. But don't go over the target score or you'll lose
+                                    the game. Match the score and you win the game.
+                                </li>
+                                <li>The target score and the value of the gemstones reset at the beginning of each game.
+                                </li>
+                                <li>Have fun!
+                                </li>
+                            </ol>
+                        </p>
+                    </div>
+                </div>
+            <!-- row 2 column 2 - game details-->
+            <div class="section col-sm-12 col-md-12 col-lg-6">
+                <div class="row">
+                    <!-- row 1 column 2 - wins & losses-->
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <h3>Wins: <span id="wins"></span></h3>
+                        <h3>Losses: <span id="losses"></span></h3>
+                    </div>
+                    <!--row 1 colomn 2 - target score & your score-->
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                        <h3>Target Score: <span id="target-score"></span></h3>
+                        <h3>Your Score: <span id="your-score"></span></h3>
+                    </div>
+                </div>
+            </div>  
+            <!--bottom row where the gems are-->  
+            <div class="row">
+                <div class="gemstones col-sm-12 col-md-12 col-lg-12">
+                </div>
+            </div>
+        </div>    
+    </div>   
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="assets/javascript/game.js"></script>
+</body>
+</html>
