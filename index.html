@@ -21,7 +21,7 @@
                 </div>
             <!--row 2 column 1 - instructions for the game-->
                 <div class="row">
-                    <div class="section col-sm-12 col-md-12 col-lg-6 instructions">
+                    <div class="section col-sm-12 col-md-12 col-lg-6 instructions wrap">
                         <h2>Instructions:</h2>
                         <p>
                             <ol>
@@ -44,13 +44,17 @@
                     <div class="row">
                         <!-- row 1 column 2 - wins & losses-->
                         <div class="col-sm-12 col-md-12 col-lg-12">
-                            <h3>Wins: <span id="wins"></span></h3>
-                            <h3>Losses: <span id="losses"></span></h3>
+                            <div class="game-data wrap lTop">
+                                <h3>Wins: <span id="wins"></span></h3>
+                                <h3>Losses: <span id="losses"></span></h3>
+                            </div>
                         </div>
                         <!--row 1 colomn 2 - target score & your score-->
                         <div class="col-sm-12 col-md-12 col-lg-12">
-                            <h3>Target Score: <span id="target-score"></span></h3>
-                            <h3>Your Score: <span id="your-score"></span></h3>
+                            <div class="game-data wrap lBottom">
+                                <h3>Target Score: <span id="target-score"></span></h3>
+                                <h3>Your Score: <span id="your-score"></span></h3>
+                            </div>
                         </div>
                     </div>
                 </div> 
@@ -58,10 +62,10 @@
             <!--bottom row where the gems are-->  
             <div class="row">
                 <div class="gemstones col-sm-12 col-md-12 col-lg-12">
-                    <img src="assets/images/Peridot round.png" alt="Peridot">
-                    <img src="assets/images/Garnet heart.png" alt="Garnet">
-                    <img src="assets/images/Apatite pear.png" alt="Apatite">
-                    <img src="assets/images/Tanzanite trillion.png" alt="Tanzanite">
+                    <img class="gem gem1" src="assets/images/Peridot round.png" alt="Peridot">
+                    <img class="gem gem2" src="assets/images/Garnet heart.png" alt="Garnet">
+                    <img class="gem gem3" src="assets/images/Apatite pear.png" alt="Apatite">
+                    <img class="gem gem4" src="assets/images/Tanzanite trillion.png" alt="Tanzanite">
                    
                 </div>
             </div>
@@ -71,6 +75,9 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"
     integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+    integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
     crossorigin="anonymous"></script>
     <script src="assets/javascript/game.js"></script>
 </body>
