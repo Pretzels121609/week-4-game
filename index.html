@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Mr+Bedfort" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <!-- this is the container that holds all the content of the game -->
+        <!-- this is the container that holds all the contents of the game -->
         <div class="container">
                 <div class="row">
                     <div class="col-sm-12 col-md-12 col-lg-12">
@@ -21,8 +21,8 @@
                 </div>
             <!--row 2 column 1 - instructions for the game-->
                 <div class="row">
-                    <div class="section col-sm-12 col-md-12 col-lg-6">
-                        <h2>Instructions: <span id="instructions"></span></h2>
+                    <div class="section col-sm-12 col-md-12 col-lg-6 instructions">
+                        <h2>Instructions:</h2>
                         <p>
                             <ol>
                                 <li>At the start of the game, you'll be given a target score.
@@ -38,25 +38,31 @@
                             </ol>
                         </p>
                     </div>
-                </div>
+            
             <!-- row 2 column 2 - game details-->
-            <div class="section col-sm-12 col-md-12 col-lg-6">
-                <div class="row">
-                    <!-- row 1 column 2 - wins & losses-->
-                    <div class="col-sm-12 col-md-12 col-lg-12">
-                        <h3>Wins: <span id="wins"></span></h3>
-                        <h3>Losses: <span id="losses"></span></h3>
+                <div class="section col-sm-12 col-md-12 col-lg-6">    
+                    <div class="row">
+                        <!-- row 1 column 2 - wins & losses-->
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <h3>Wins: <span id="wins"></span></h3>
+                            <h3>Losses: <span id="losses"></span></h3>
+                        </div>
+                        <!--row 1 colomn 2 - target score & your score-->
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <h3>Target Score: <span id="target-score"></span></h3>
+                            <h3>Your Score: <span id="your-score"></span></h3>
+                        </div>
                     </div>
-                    <!--row 1 colomn 2 - target score & your score-->
-                    <div class="col-sm-12 col-md-12 col-lg-12">
-                        <h3>Target Score: <span id="target-score"></span></h3>
-                        <h3>Your Score: <span id="your-score"></span></h3>
-                    </div>
-                </div>
-            </div>  
+                </div> 
+            </div>     
             <!--bottom row where the gems are-->  
             <div class="row">
                 <div class="gemstones col-sm-12 col-md-12 col-lg-12">
+                    <img src="assets/images/Peridot round.png" alt="Peridot">
+                    <img src="assets/images/Garnet heart.png" alt="Garnet">
+                    <img src="assets/images/Apatite pear.png" alt="Apatite">
+                    <img src="assets/images/Tanzanite trillion.png" alt="Tanzanite">
+                   
                 </div>
             </div>
         </div>    

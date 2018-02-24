@@ -9,5 +9,11 @@ body {
 .heading {
     font-size: 75px;
     font-family: 'Mr Bedfort', cursive;
-
-}    
+}  
+img{
+    height: 250px;
+    margin: 20px;
+} 
+.instructions {
+    text-align: left;
+} 
